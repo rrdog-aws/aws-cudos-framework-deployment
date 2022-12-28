@@ -15,6 +15,18 @@ cid-cmd [tool parameters] [command] [command parameters]
 ### update
 
 ### delete
+Delete Dashboard and all dependencies unused by other CID-managed dasboards
+(including QuickSight datasets, Athena views and tables)
+
+Command options:
+   --dashboard-id TEXT QuickSight dashboard id (cudos, cost_intelligence_dashboard, kpi_dashboard, ta-organizational-view, trends-dashboard etc)
+   --athena-database TEXT Athena database
+   
+Options:
+  -y, --yes            confirm all
+  -v, --verbose
+  --dashboard-id TEXT  QuickSight dashboard id
+  --help               Show this message and exit.
 
 ### map
 
